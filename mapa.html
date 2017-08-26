@@ -1,0 +1,55 @@
+<div class="inner mapa-box">
+
+    <div style="position: relative;">
+        <ul class="mapa-accordion">
+            <li><a href="">SANTIAGO <img src="img/icon-map-arrow-down.png" alt=""></a>
+                <ul>
+                    <li><a href="">SANTIAGO CENTRO</a></li>
+                    <li><a href="">HUÉRFANOS 980, PISO 4</a></li>
+                    <li><a href="">HUÉRFANOS 980, PISO 2 Y 4</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">LA SERENA <img src="img/icon-map-arrow-down.png" alt=""></a>
+                <ul>
+                    <li><a href="">SANTIAGO CENTRO</a></li>
+                    <li><a href="">HUÉRFANOS 980, PISO 4</a></li>
+                    <li><a href="">HUÉRFANOS 980, PISO 2 Y 4</a></li>
+                </ul>
+            </li>
+            <li><a href="">RANCAGUA <img src="icon-map-arrow-down.png" alt=""></a>
+                <ul>
+                    <li><a href="">SANTIAGO CENTRO</a></li>
+                    <li><a href="">HUÉRFANOS 980, PISO 4</a></li>
+                    <li><a href="">HUÉRFANOS 980, PISO 2 Y 4</a></li>
+                </ul>
+            </li>
+        </ul>
+        <img id="mapa" src="img/maps.gif" alt="" width="100%;">
+        <div class="mapa-place">
+            <div>Santiago</div>
+            <div>
+                <p><strong>Direccion:</strong></p>
+                <p>Av. Apoquindo 5555,</p>
+                <p>Piso 2.</p>
+                <p>Santiago Centro.</p>
+                <br/>
+                <p><strong>Teléfono:</strong></p>
+                <p>600 637 3737</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $(".mapa-accordion>li>a").click(function (e) {
+            e.preventDefault();
+            $(this).next().slideToggle();
+            $(this).parent().toggleClass("active");
+        }); 
+
+    });
+</script>

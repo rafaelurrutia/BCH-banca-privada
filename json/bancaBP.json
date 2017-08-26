@@ -1,0 +1,87 @@
+ [
+    {
+      "nombre": "Isidora - Banca Privada",
+      "direccion": "Isidora Goyenechea 2919 Piso 3" ,
+"latitud":-33.4142746 ,
+"longitud":-70.60088129999997 ,
+"telefono":"(600) 637 4000",
+"gerente":"4",
+"telefono_gerente":"1",
+"correo_gerente": "2",
+"marca":"BEC",
+"comuna":"Las Condes"
+    },
+    {
+      "nombre": "El Bosque Alerce - Banca Privada",
+      "direccion": "El Bosque Norte 500 Piso 2" ,
+"latitud":-33.41416780000001 ,
+"longitud": -70.603319 ,
+"telefono":"(600) 637 4000",
+"gerente":"",
+"telefono_gerente":"",
+"correo_gerente": "",
+"marca":"BEC",
+"comuna":"Providencia"
+    },
+    {
+      "nombre": "El Bosque Laurel - Banca Privada",
+      "direccion": "El Bosque Norte 500" ,
+"latitud":-33.41416780000001 ,
+"longitud": -70.603319 ,
+"telefono":"(600) 637 4000",
+"gerente":"",
+"telefono_gerente":"",
+"correo_gerente": "",
+"marca":"BEC",
+"comuna":"Providencia"
+
+    },
+    {
+      "nombre": "El Bosque Roble - Banca Privada",
+      "direccion": "El Bosque Norte 500 Piso 2" ,
+"latitud":-33.41416780000001 ,
+"longitud": -70.603319 ,
+"telefono":"(600) 637 4000",
+"gerente":"",
+"telefono_gerente":"",
+"correo_gerente": "",
+"marca":"BEC",
+"comuna":"Providencia"
+    },
+    {
+      "nombre": "Valparaíso Edwards - Banca Privada",
+      "direccion": "Cochrane 785" ,
+      "latitud":-33.0397927 ,
+      "longitud": -71.62741779999999 ,
+"telefono":"(600) 637 4000",
+"gerente":"",
+"telefono_gerente":"",
+"correo_gerente": "",
+"marca":"BEC",
+"comuna":"Valparaíso"
+    }
+    ,
+    {
+      "nombre": "Concepción O’Higgins - Banca Privada",
+      "direccion": "Av. Bernardo O’Higgins 499" ,
+      "latitud":-36.8283708 ,
+      "longitud": -73.0519046 ,
+"telefono":"(600) 637 4000",
+"gerente":"",
+"telefono_gerente":"",
+"correo_gerente": "",
+"marca":"BEC",
+"comuna":"Concepción"
+    }
+
+  ]
+
+
+
+
+
+
+
+
+
+

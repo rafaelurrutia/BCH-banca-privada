@@ -1,0 +1,42 @@
+
+$golden: #948259;
+$black: #000000;
+$grey-1: #252525;
+$grey-2: #2f2f2f;
+$grey-3: #4a4a4a;
+$grey-4: #dddddd;
+$grey-5: #d8d8d8;
+$grey-6: #e7e7e7;
+$white: #ffffff;
+
+.bg-golden {
+  background-color: $golden;
+}
+.bg-black {
+  background-color: $black;
+}
+.bg-grey-1 {
+  background-color: $grey-1;
+}
+.bg-grey-2 {
+  background-color: $grey-2;
+}
+.bg-grey-3 {
+  background-color: $grey-3;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+$mobile: "(max-width: 767px)"; //xs
+$mobilelandscape: "(max-width: 767px) and (orientation: landscape)";
+$tablet: "(min-width: 768px) and (max-width: 991px)"; // sm
+$desktop-small: "(min-width: 992px) and (max-width: 1199px)"; // md
+$mobile-y-tablet: "(max-width: 991px)";
+$no-mobile: "(min-width: 768px)";
+$desktop: "(min-width: 992px)";
+$desktop-large: "(min-width: 1200px)"; //lg
+$phablet: "(min-width: 480px) and (max-width: 767px)"; // ph
+$ruta_img	: 	'../img/';

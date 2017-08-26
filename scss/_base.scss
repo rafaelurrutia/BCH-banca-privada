@@ -1,0 +1,445 @@
+* {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+  background-color: $black;
+  color: #fff;
+  font-weight: 300;
+  @media #{$mobile} {
+   background-color: $grey-4;
+  }
+}
+
+#content {
+  margin-bottom: 50px;
+  @media #{$mobile} {
+    margin-top: 45px;
+  }
+}
+
+
+h1 {
+  font-family: 'Meddon', cursive;
+  font-size: 32px;
+  color: $white;
+  @media #{$mobile} {
+   font-size: 24px;
+   color: $white;
+   line-height: 36px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  @media #{$mobile} {
+    line-height: 36px;
+    font-size: 32px;
+  }
+
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+font-size: 16px;
+}
+
+h5 {
+font-size: 30px;
+    font-weight: 300;
+}
+
+h6 {
+
+}
+
+p {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  @media #{$mobile} {
+    font-size: 13px;
+    line-height: 22px;
+
+  }
+
+}
+
+a {
+  color: $white;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.wrapper {
+  max-width: 1100px;
+    width: 100%;
+  margin: 0 auto;
+  @media #{$mobile} {
+    width: 100%;
+    float: left;
+  }
+
+}
+
+#header {
+    position: relative;
+    @media #{$mobile} {
+      position: fixed;
+      z-index: 10;
+      background: $black;
+      top: 0;
+      left: 0;
+        width: 100%;
+    }
+    .top {
+        height: 22px;
+        float: left;
+        width: 100%;
+        background-color: $grey-1;
+        @media #{$mobile} {
+            display: none;
+        }
+        > div > ul {
+            float: right;
+            > li {
+                font-size: 11px;
+                line-height: 23px;
+                > a {
+                    background-image: url(../img/icon-arrow-down.png);
+                    padding-right: 20px;
+                    background-position: right center;
+                    ;
+                }
+            }
+            ul {
+                display: none;
+            }
+        }
+    }
+    .mid {
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        float: left;
+        width: 100%;
+        position: relative;
+        @media #{$mobile} {
+            padding-top: 11px;
+            padding-bottom: 11px;
+            padding-left: 35px;
+            height: 45px;
+            z-index: 9;
+        }
+        img {
+            &:nth-child(1) {
+                display: none;
+                @media #{$mobile} {
+                    display: inline-block;
+                    width: 18px;
+                    position: absolute;
+                    left: 10px;
+                    top: 17px;
+                    cursor: pointer;
+                }
+            }
+            &:nth-child(2) {
+                display: inline-block;
+                vertical-align: middle;
+                @media #{$mobile} {
+                    width: 135px;
+                }
+            }
+            &:nth-child(3) {
+                display: inline-block;
+                vertical-align: middle;
+                @media #{$mobile} {
+                    width: 135px;
+                }
+            }
+        }
+    }
+    .nav-primary {
+        text-align: center;
+        margin-bottom: 20px;
+        @media #{$no-mobile} {
+            display: block !important;
+        }
+        @media #{$mobile} {
+            display: none;
+            width: 100%;
+            position: absolute;
+            top: 45px;
+            left: 0;
+            right: 0;
+            background-color: $black;
+            z-index: 999;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        &.open {
+            @media #{$mobile} {
+                display: inline-block;
+            }
+        }
+        > li {
+            display: inline-block;
+            padding-left: 10px;
+            padding-right: 10px;
+            @media #{$desktop-small} {
+                padding-left: 3px !important;
+                padding-right: 3px !important;
+            }
+            @media #{$tablet} {
+                padding-left: 3px !important;
+                padding-right: 3px !important;
+            }
+            @media #{$mobile} {
+                display: block !important;
+                width: 100% !important;
+                padding: 10px 0px !important;
+                background-color: $black;
+            }
+            > a {
+                font-size: 13px;
+                position: relative;
+                display: block;
+                margin: 0 2px;
+                padding-left: 25px;
+                padding-right: 25px;
+                overflow: hidden;
+                padding-top: 9px;
+                padding-bottom: 9px;
+                color: $white;
+                &:before {
+                    box-sizing: border-box;
+                    transform: translateX(100%);
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    border-bottom: 1px solid transparent;
+                    border-left: 1px solid transparent;
+                }
+                &:after {
+                    box-sizing: border-box;
+                    transform: translateX(-100%);
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    border-top: 1px solid transparent;
+                    border-right: 1px solid transparent;
+                }
+                &:hover {
+                    color: $golden;
+                    text-decoration: none;
+                    &:before {
+                        transition: .1s transform linear, .1s height linear .1s;
+                        transform: translateX(0);
+                        height: 100%;
+                        border-color: $golden;
+                    }
+                    &:after {
+                        transition: .1s transform linear .2s, .1s height linear .3s;
+                        transform: translateX(0);
+                        height: 100%;
+                        border-color: $golden;
+                    }
+                }
+                @media #{$desktop-small} {
+                    padding-left: 3px !important;
+                    padding-right: 3px !important;
+                }
+                @media #{$tablet} {
+                    padding-left: 3px !important;
+                    padding-right: 3px !important;
+                }
+                @media #{$mobile} {
+                    display: block !important;
+                }
+            }
+            &.current {
+                a {
+                    border: 1px solid $golden;
+                    color: $golden;
+                    padding-top: 9px;
+                    padding-bottom: 9px;
+                }
+            }
+        }
+    }
+}
+.inner {
+  h4 {
+    font-weight: 700;
+  }
+  color: $grey-1;
+  p {
+    padding-bottom: 25px;
+
+  }
+    span{
+        width: 100%;
+        display: inline-block;
+        color: $golden;
+        padding: 25px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center; 
+    }
+  @media #{$mobile} {
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+}
+
+#footer {
+    width: 100%;
+    display: inline-block;
+    font-size: 15px;
+    padding-bottom: 56px;
+    margin-top: 56px;
+    @media #{$mobile} {
+      margin-top: 20px;
+    }
+    > img,
+    > p.casa {
+        display: inline-block;
+        @media #{$mobile} {
+            display: block;
+            float: none;
+        }
+    }
+    > img {
+        margin-top: 13px;
+        vertical-align: top;
+        margin-left: 12%;
+        @media #{$mobile} {
+            margin-top: 42px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    > p.casa {
+        padding-left: 30px;
+        vertical-align: top;
+        line-height: 56px;
+        margin-left: 54px;
+        @media #{$mobile} {
+            margin-top: 14px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0;
+            text-align: center;
+            line-height: 120%;
+        }
+        span {
+            display: none;
+            line-height: 120%;
+            @media #{$mobile} {
+                display: block;
+            }
+        }
+    }
+    div.redes-sociales {
+        width: 100%;
+        display: none;
+        @media #{$mobile} {
+            display: inline-block;
+            display: none;
+        }
+        ul {
+            text-align: center;
+            margin-top: 0;
+            @media #{$mobile} {
+                margin-top: 25px;
+            }
+            li,
+            a {
+                color: $golden;
+                line-height: 120%;
+            }
+            li {
+                list-style-type: none;
+                display: inline-block;
+                margin: 0 6px;
+            }
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+    ul.links-box {
+        width: 100%;
+        display: inline-block;
+        padding: 15px;
+        text-align: center;
+        min-height: 57px;
+        margin-bottom: 15px;
+        margin-top: 17px;
+        @media #{$mobile} {
+            margin-top: 23px;
+            padding: 14px 30px 24px 30px;
+        }
+        li,
+        a {
+            color: $golden;
+            line-height: 120%;
+            @media #{$mobile} {
+                line-height: 160%;
+            }
+        }
+        li {
+            list-style-type: none;
+            display: inline;
+            margin: 0 16px;
+            @media #{$mobile} {
+                display: block;
+            }
+        }
+        a {
+            text-decoration: underline;
+        }
+    }
+    p:last-of-type {
+        color: $white;
+        text-align: center;
+        line-height: 120%;
+        a {
+            text-decoration: underline;
+        }
+        @media #{$mobile} {
+            span {
+                display: block;
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+.co-golden{
+    color: $golden !important;
+}
+
+.co-white{
+    color: $white;
+}
+
+.co-black{
+    color: $black;
+}
